@@ -11,7 +11,21 @@ const isPassValid = (pass) => {
 	return response;
 }
 
+//Responses
+const emptyFields = () => {
+	alert("Required fields are missing!"); 
+	return false;
+}
 
+const invalidCredentials = () => {
+	alert("Invalid Email Address OR Password!");
+	return false;
+}
+
+const success = () => {
+	alert("Success!")
+	return true;
+}
 
 //Form validation
 const validateForm = () => {
