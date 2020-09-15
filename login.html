@@ -14,11 +14,13 @@
 		</div>
 
 	<div id="loginform">
-		<div class="containerfields">
-			<input type="email" placeholder="Email Address">
-			<input type="password" placeholder="Password">
-		</div>
-		<input type="submit" value="Login">
+		<form name="myForm" method="POST" action="" onsubmit="return validateForm()">
+			<div class="containerfields">
+				<input type="email" name="email" placeholder="Email Address">
+				<input type="password" name="password" placeholder="Password">
+			</div>
+			<input type="submit" value="Login">
+		</form>
 	</div>
 
 	<div id="footer">
@@ -27,5 +29,6 @@
 
 	</div>
 
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
